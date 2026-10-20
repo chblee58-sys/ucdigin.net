@@ -1,4 +1,4 @@
-"""
+﻿"""
 category_publisher.py - UCKLab Weekly HBR 10-Category Dual Architecture Publisher
 Features:
 1. Option 1 (Admin Private Full Archive):
@@ -34,21 +34,19 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 WP_URL = os.getenv("WP_URL", "https://ucdigin.net")
 WP_USER = os.getenv("WP_USER", "AutoBot_Editor")
 WP_APP_PASSWORD = os.getenv("WP_APP_PASSWORD", "5kOS QdBg 6Prd qR4F qixR lg43")
-PARENT_CATEGORY_ID = 2  # 뉴스 TOP 10
+PARENT_CATEGORY_ID = 2  # ?댁뒪 TOP 10
 
 # WordPress Category Taxonomy Mapping on ucdigin.net
 WP_CATEGORY_MAP = {
-    "politics": 3,           # 정치·외교
-    "economy": 4,            # 경제·산업
-    "society": 5,            # 사회·AI윤리
-    "culture": 6,            # 문화·예술
-    "finance": 7,            # 금융·지정학
-    "defense": 8,            # 국방·안보
-    "christianity": 9,       # 기독교·청지기
-    "science": 10,           # 과학·기술·AGI
-    "climate": 11,           # 기후·환경·에너지
-    "sports": 12             # 스포츠
-}
+    "politics": 3,           # ?뺤튂쨌?멸탳
+    "economy": 4,            # 寃쎌젣쨌?곗뾽
+    "society": 5,            # ?ы쉶쨌AI?ㅻ━
+    "culture": 6,            # 臾명솕쨌?덉닠
+    "finance": 7,            # 湲덉쑖쨌吏?뺥븰
+    "defense": 8,            # 援?갑쨌?덈낫
+    "christianity": 9,       # 湲곕룆援먃룹껌吏湲?    "science": 10,           # 怨쇳븰쨌湲곗닠쨌AGI
+    "climate": 11,           # 湲고썑쨌?섍꼍쨌?먮꼫吏
+    "sports": 12             # ?ㅽ룷痢?}
 
 def build_category_badge(item, link_url=""):
     """Renders responsive branded Category Symbol Badge."""
@@ -70,7 +68,7 @@ def build_category_badge(item, link_url=""):
     badge_html = f"""
     <div style="background: {cfg['grad']}; border-left: 4px solid {cfg['border']}; border-radius: 8px; padding: 10px 16px; margin-bottom: 14px; color: #ffffff; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
         <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 18px;">{item.get('icon', '📌')}</span>
+            <span style="font-size: 18px;">{item.get('icon', '?뱦')}</span>
             <span style="font-size: 14px; font-weight: 800; letter-spacing: 0.5px;">{item.get('category_ko', '')} ({item.get('category_en', '')})</span>
         </div>
         <div style="font-size: 11.5px; opacity: 0.85; font-weight: 500;">
@@ -82,7 +80,7 @@ def build_category_badge(item, link_url=""):
         return f'<a href="{link_url}" style="text-decoration:none; display:block;">{badge_html}</a>'
     return badge_html
 
-def build_three_line_summary_box(three_lines, title="주간 핵심 전략 명제 (HBR Theses)"):
+def build_three_line_summary_box(three_lines, title="二쇨컙 ?듭떖 ?꾨왂 紐낆젣 (HBR Theses)"):
     """Renders executive summary block."""
     if not three_lines:
         return ""
@@ -90,7 +88,7 @@ def build_three_line_summary_box(three_lines, title="주간 핵심 전략 명제
     return f"""
     <div class="ucklab-summary-block" style="margin: 22px 0; padding: 20px 22px; border-radius: 12px; background: #eff6ff; border-left: 5px solid #2563eb; border: 1px solid #dbeafe; box-shadow: 0 4px 12px rgba(37,99,235,0.05); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
         <div style="font-size: 14px; font-weight: 800; color: #1e40af; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-            <span>⚡</span> <b>{title}</b>
+            <span>??/span> <b>{title}</b>
         </div>
         <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.75; color: #1e293b;">
             {items_html}
@@ -102,20 +100,20 @@ def build_citation_box(citation_data):
     """Renders official source & citation block."""
     if not citation_data:
         return ""
-    source = citation_data.get("source", "글로벌 공공 및 주요 싱크탱크")
+    source = citation_data.get("source", "湲濡쒕쾶 怨듦났 諛?二쇱슂 ?깊겕?깊겕")
     url = citation_data.get("url", "https://ucklab.org/research")
-    date_str = citation_data.get("date", "당일")
-    attribution = citation_data.get("attribution", "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석")
+    date_str = citation_data.get("date", "?뱀씪")
+    attribution = citation_data.get("attribution", "UCKLab AI?듯빀誘몃옒?곌뎄??(?댁갹諛?諛뺤궗 ?곌뎄?) 쨌 二쇨컙 HBR ?명뀛由ъ쟾??遺꾩꽍")
 
     return f"""
     <div style="margin: 24px 0 16px 0; padding: 18px 22px; border-radius: 12px; background: #f8fafc; border: 1px solid #e2e8f0; font-size: 13px; line-height: 1.65; color: #475569; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
         <div style="font-weight: 800; color: #0f172a; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-            <span>📑</span> <b>공식 출처 및 학술 인텔리전스 인용 (Source &amp; Citation)</b>
+            <span>?뱫</span> <b>怨듭떇 異쒖쿂 諛??숈닠 ?명뀛由ъ쟾???몄슜 (Source &amp; Citation)</b>
         </div>
         <div style="word-break: break-all;">
-            • <b>원문 출처:</b> {source} (참조: {date_str})<br/>
-            • <b>원문 링크:</b> <a href="{url}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">{url}</a><br/>
-            • <b>분석 및 귀속:</b> {attribution}
+            ??<b>?먮Ц 異쒖쿂:</b> {source} (李몄“: {date_str})<br/>
+            ??<b>?먮Ц 留곹겕:</b> <a href="{url}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">{url}</a><br/>
+            ??<b>遺꾩꽍 諛?洹??</b> {attribution}
         </div>
     </div>
     """
@@ -129,7 +127,7 @@ def build_category_paywall_card(cat_item, main_landing_url="https://ucdigin.net"
     - Dual CTAs (ucklab.org 1:1 Synthesis & Instant 9,900 KRW Paywall)
     """
     cat_id = cat_item.get("id", "politics")
-    cat_name = cat_item.get('category_ko', '심층')
+    cat_name = cat_item.get('category_ko', '?ъ링')
     on_demand_url = f"https://ucklab.org/?cat={cat_id}#executive-pipeline"
     toss_cta_url = f"{main_landing_url}/#ucklab-paywall-cta"
     admin_on_demand_url = f"https://ucklab.org/?cat={cat_id}&admin_bypass=true&admin_key=UCK777#executive-pipeline"
@@ -167,42 +165,42 @@ def build_category_paywall_card(cat_item, main_landing_url="https://ucdigin.net"
     <!-- wp:group -->
     <div id="ucklab-category-paywall" style="margin: 36px 0; padding: 34px 28px; border-radius: 16px; background: linear-gradient(135deg, #090d16 0%, #1e3a8a 100%); color: #ffffff; text-align: center; box-shadow: 0 12px 32px rgba(15,23,42,0.35); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Pretendard', sans-serif;">
         <div id="ucklab-cat-lock-badge" onclick="window.onUcklabBadgeSecretClick && window.onUcklabBadgeSecretClick()" style="display: inline-block; padding: 5px 16px; border-radius: 20px; background: rgba(59,130,246,0.25); color: #93c5fd; font-size: 12.5px; font-weight: 800; margin-bottom: 14px; letter-spacing: 0.5px; cursor: pointer; user-select: none;">
-            📄 UCKLab Monograph™ Upgrade · 12시간 보안 발급
+            ?뱞 UCKLab Monograph??Upgrade 쨌 12?쒓컙 蹂댁븞 諛쒓툒
         </div>
         <h3 style="margin: 0 0 14px 0; font-size: 23px; font-weight: 900; color: #ffffff; line-height: 1.4;">
-            2,500단어 APA 7th 규격 UCKLab Monograph™ PDF 발급 ({cat_name})
+            2,500?⑥뼱 APA 7th 洹쒓꺽 UCKLab Monograph??PDF 諛쒓툒 ({cat_name})
         </h3>
         <p style="font-size: 15px; color: #cbd5e1; line-height: 1.75; max-width: 720px; margin: 0 auto 20px auto; word-break: keep-all;">
-            단순 요약을 넘어 글로벌 학술·전략 보고서 표준(APA 7th)으로 작성된 전문 인텔리전스를 영구 소장하세요. 
-            C-Level 임원 보고용 16:9 프레젠테이션 PPT 덱과 3회 수정 거버넌스(Revisions Guarantee)가 무상 보장됩니다.
+            ?⑥닚 ?붿빟???섏뼱 湲濡쒕쾶 ?숈닠쨌?꾨왂 蹂닿퀬???쒖?(APA 7th)?쇰줈 ?묒꽦???꾨Ц ?명뀛由ъ쟾?ㅻ? ?곴뎄 ?뚯옣?섏꽭?? 
+            C-Level ?꾩썝 蹂닿퀬??16:9 ?꾨젅?좏뀒?댁뀡 PPT ?깃낵 3???섏젙 嫄곕쾭?뚯뒪(Revisions Guarantee)媛 臾댁긽 蹂댁옣?⑸땲??
         </p>
 
         <!-- 80:20 Language Ratio Rule Architecture Box -->
         <div style="margin: 20px auto 26px auto; max-width: 720px; text-align: left; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 18px 22px;">
             <div style="font-size: 13.5px; font-weight: 800; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                <span>🌐</span> <b>[UCKLab Monograph™ 80:20 언어 비율 규정 &amp; 3회 수정 거버넌스]</b>
+                <span>?뙋</span> <b>[UCKLab Monograph??80:20 ?몄뼱 鍮꾩쑉 洹쒖젙 &amp; 3???섏젙 嫄곕쾭?뚯뒪]</b>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; font-size: 13px; color: #e2e8f0; line-height: 1.6;">
                 <div style="background: rgba(0,0,0,0.25); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #38bdf8;">
-                    <b>🅰️ 국문 주권형 (Korean Focus)</b><br/>
-                    국문 본문 80% (2,000단어) + 영문 Executive 요약 20% (500단어)
+                    <b>?뀺截?援?Ц 二쇨텒??(Korean Focus)</b><br/>
+                    援?Ц 蹂몃Ц 80% (2,000?⑥뼱) + ?곷Ц Executive ?붿빟 20% (500?⑥뼱)
                 </div>
                 <div style="background: rgba(0,0,0,0.25); padding: 10px 14px; border-radius: 8px; border-left: 3px solid #10b981;">
-                    <b>🅱️ 글로벌 전략형 (Global Focus)</b><br/>
-                    영문 본문 80% (2,000단어) + 국문 핵심 요약 20% (500단어)
+                    <b>?뀻截?湲濡쒕쾶 ?꾨왂??(Global Focus)</b><br/>
+                    ?곷Ц 蹂몃Ц 80% (2,000?⑥뼱) + 援?Ц ?듭떖 ?붿빟 20% (500?⑥뼱)
                 </div>
             </div>
             <div style="font-size: 12px; color: #94a3b8; margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px;">
-                ✓ <b>공통 제공:</b> C-Level 임원 보고용 16:9 프레젠테이션 PPT 덱 (10~12장) + 3회 수정 거버넌스(Revisions Guarantee) 무상 보장
+                ??<b>怨듯넻 ?쒓났:</b> C-Level ?꾩썝 蹂닿퀬??16:9 ?꾨젅?좏뀒?댁뀡 PPT ??(10~12?? + 3???섏젙 嫄곕쾭?뚯뒪(Revisions Guarantee) 臾댁긽 蹂댁옣
             </div>
         </div>
 
         <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
             <a href="https://ucklab.org/api/v1/academic/upgrade?topic={cat_name}" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #FBBF24; padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 800; text-decoration: none; border: 1.5px solid #D97706; box-shadow: 0 10px 25px rgba(217, 119, 6, 0.3); display: inline-flex; align-items: center; gap: 8px;">
-                <span>🎓</span> <b>UCKLab Monograph™ PDF 바로 생성하기 (2,500단어 APA 7th) ➔</b>
+                <span>?럳</span> <b>UCKLab Monograph??PDF 諛붾줈 ?앹꽦?섍린 (2,500?⑥뼱 APA 7th) ??/b>
             </a>
             <a href="{on_demand_url}" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: #ffffff; padding: 13px 24px; border-radius: 10px; font-size: 14.5px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
-                <span>⚡</span> <b>ucklab.org 1:1 온디맨드 실시간 직조 ➔</b>
+                <span>??/span> <b>ucklab.org 1:1 ?⑤뵒留⑤뱶 ?ㅼ떆媛?吏곸“ ??/b>
             </a>
         </div>
 
@@ -210,28 +208,28 @@ def build_category_paywall_card(cat_item, main_landing_url="https://ucdigin.net"
         <div id="ucklab-cat-admin-bypass-box" style="display: none; margin: 20px auto 0 auto; max-width: 720px; padding: 14px 18px; border-radius: 12px; background: linear-gradient(135deg, rgba(217, 119, 6, 0.2), rgba(16, 185, 129, 0.25)); border: 1.5px solid #fbbf24; text-align: left;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
                 <span style="font-size: 13px; font-weight: 800; color: #fbbf24; display: flex; align-items: center; gap: 6px;">
-                    <span>🛡️</span> [최고관리자 마스터 인증 승인]
+                    <span>?썳截?/span> [理쒓퀬愿由ъ옄 留덉뒪???몄쬆 ?뱀씤]
                 </span>
-                <span style="font-size: 11px; color: #34d399; font-weight: 700; background: rgba(16,185,129,0.2); padding: 2px 8px; border-radius: 6px;">결제 우회 활성</span>
+                <span style="font-size: 11px; color: #34d399; font-weight: 700; background: rgba(16,185,129,0.2); padding: 2px 8px; border-radius: 6px;">寃곗젣 ?고쉶 ?쒖꽦</span>
             </div>
             <p style="font-size: 12px; color: #e2e8f0; margin: 0 0 10px 0; line-height: 1.5;">
-                결제창 연결을 건너뛰고 해당 분야({cat_name})의 2,500단어 APA 7th Monograph™ 리포트를 실시간 AGI 직조하거나 즉시 다운로드할 수 있습니다.
+                寃곗젣李??곌껐??嫄대꼫?곌퀬 ?대떦 遺꾩빞({cat_name})??2,500?⑥뼱 APA 7th Monograph??由ы룷?몃? ?ㅼ떆媛?AGI 吏곸“?섍굅??利됱떆 ?ㅼ슫濡쒕뱶?????덉뒿?덈떎.
             </p>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                 <a href="{admin_on_demand_url}" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #ffffff; padding: 10px 18px; border-radius: 8px; font-size: 13px; font-weight: 800; text-decoration: none; box-shadow: 0 4px 12px rgba(16,185,129,0.35); display: inline-flex; align-items: center; gap: 6px;">
-                    <span>⚡</span> <b>[회피 패스] ucklab.org 1:1 AGI 즉석 직조 ➔</b>
+                    <span>??/span> <b>[?뚰뵾 ?⑥뒪] ucklab.org 1:1 AGI 利됱꽍 吏곸“ ??/b>
                 </a>
                 <a href="{admin_pdf_url}" target="_blank" download style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #ffffff; padding: 10px 16px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none;">
-                    📥 즉시 Monograph™ 다운로드
+                    ?뱿 利됱떆 Monograph???ㅼ슫濡쒕뱶
                 </a>
                 <a href="{admin_ppt_url}" target="_blank" download style="background: rgba(217,119,6,0.3); border: 1px solid rgba(217,119,6,0.5); color: #fde68a; padding: 10px 16px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none;">
-                    📊 맞춤 PPT 다운로드
+                    ?뱤 留욎땄 PPT ?ㅼ슫濡쒕뱶
                 </a>
             </div>
         </div>
 
         <div style="font-size: 12px; color: #94a3b8; margin-top: 16px;">
-            ✓ 토스페이먼츠 간편결제 지원 | 12시간 보안 토큰 발급 &amp; 동적 워터마크 각인 | UCKLab 연구진 피어 리뷰
+            ???좎뒪?섏씠癒쇱툩 媛꾪렪寃곗젣 吏??| 12?쒓컙 蹂댁븞 ?좏겙 諛쒓툒 &amp; ?숈쟻 ?뚰꽣留덊겕 媛곸씤 | UCKLab ?곌뎄吏??쇱뼱 由щ럭
         </div>
     </div>
     <!-- /wp:group -->
@@ -265,19 +263,19 @@ def build_category_paywall_card(cat_item, main_landing_url="https://ucdigin.net"
             }}
         }};
         function promptKey(){{
-            var code = prompt('🔒 [UCKLab 최고관리자 보안 인증]\\n마스터 시크릿 코드를 입력하십시오:');
+            var code = prompt('?뵏 [UCKLab 理쒓퀬愿由ъ옄 蹂댁븞 ?몄쬆]\\n留덉뒪???쒗겕由?肄붾뱶瑜??낅젰?섏떗?쒖삤:');
             if (code && (code.trim().toUpperCase() === 'UCK777' || code.trim().toUpperCase() === 'ADMIN2026' || code.trim().toUpperCase() === 'UCKADMIN')) {{
                 sessionStorage.setItem('ucklab_admin_bypass', 'ENABLED_UCK777');
                 localStorage.setItem('ucklab_admin_bypass', 'ENABLED_UCK777');
-                alert('✓ [승인 완료] 최고관리자 권한이 활성화되었습니다.');
+                alert('??[?뱀씤 ?꾨즺] 理쒓퀬愿由ъ옄 沅뚰븳???쒖꽦?붾릺?덉뒿?덈떎.');
                 checkCatAdmin();
             }} else if (code && (code.trim() === 'logout' || code.trim() === 'exit')) {{
                 sessionStorage.removeItem('ucklab_admin_bypass');
                 localStorage.removeItem('ucklab_admin_bypass');
-                alert('최고관리자 모드가 해제되었습니다.');
+                alert('理쒓퀬愿由ъ옄 紐⑤뱶媛 ?댁젣?섏뿀?듬땲??');
                 checkCatAdmin();
             }} else if (code) {{
-                alert('❌ 올바르지 않은 마스터 코드입니다.');
+                alert('???щ컮瑜댁? ?딆? 留덉뒪??肄붾뱶?낅땲??');
             }}
         }}
         window.promptUcklabAdminKey = promptKey;
@@ -304,11 +302,11 @@ def publish_admin_private_archive(cat_item, report_id, osint_data=None, photo_in
     Includes featured_media and elegant glassmorphism styling.
     """
     cat_id = cat_item.get("id", "politics")
-    cat_ko = cat_item.get("category_ko", "정치/외교")
-    headline = cat_item.get("headline", "AGI 거버넌스")
+    cat_ko = cat_item.get("category_ko", "?뺤튂/?멸탳")
+    headline = cat_item.get("headline", "AGI 嫄곕쾭?뚯뒪")
     vol = report_id.split("-W")[-1] if "-W" in report_id else "38"
 
-    post_title = f"[글로벌 원문 리서치 | {cat_ko}] {headline}"
+    post_title = f"[湲濡쒕쾶 ?먮Ц 由ъ꽌移?| {cat_ko}] {headline}"
 
     # Full raw content formatted with elegant open research banner
     content_html = f"""
@@ -316,44 +314,45 @@ def publish_admin_private_archive(cat_item, report_id, osint_data=None, photo_in
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 900px; margin: 0 auto; color: #1e293b; line-height: 1.8;">
         
         <div style="background: rgba(30, 41, 59, 0.05); border-left: 5px solid #0284c7; padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; font-size: 14px; color: #0369a1;">
-            <b>🏛️ UCKLab 글로벌 인텔리전스 심층 리서치 &amp; OSINT 원문 분석</b><br/>
-            본 리포트는 글로벌 싱크탱크 원문 및 정밀 OSINT 데이터를 집대성한 UCKLab 오픈 연구 자산입니다.
+            <b>?룢截?UCKLab 湲濡쒕쾶 ?명뀛由ъ쟾???ъ링 由ъ꽌移?&amp; OSINT ?먮Ц 遺꾩꽍</b><br/>
+            蹂?由ы룷?몃뒗 湲濡쒕쾶 ?깊겕?깊겕 ?먮Ц 諛??뺣? OSINT ?곗씠?곕? 吏묐??깊븳 UCKLab ?ㅽ뵂 ?곌뎄 ?먯궛?낅땲??
         </div>
 
-        <h2>{headline} - {cat_ko} 연구 원문 및 OSINT 텔레메트리</h2>
-        <p><b>리포트 ID:</b> {report_id} | <b>분야:</b> {cat_ko} ({cat_item.get('category_en', '')}) | <b>출처:</b> {cat_item.get('source', '')}</p>
+        <h2>{headline} - {cat_ko} ?곌뎄 ?먮Ц 諛?OSINT ?붾젅硫뷀듃由?/h2>
+        <p><b>由ы룷??ID:</b> {report_id} | <b>遺꾩빞:</b> {cat_ko} ({cat_item.get('category_en', '')}) | <b>異쒖쿂:</b> {cat_item.get('source', '')}</p>
 
         <hr/>
 
-        <h3>1. 3대 전략 명제 (Theses)</h3>
-        {build_three_line_summary_box(cat_item.get('three_line_summary'), title=f"{cat_ko} 원문 명제")}
+        <h3>1. 3? ?꾨왂 紐낆젣 (Theses)</h3>
+        {build_three_line_summary_box(cat_item.get('three_line_summary'), title=f"{cat_ko} ?먮Ц 紐낆젣")}
 
-        <h3>2. HBR급 심층 인텔리전스 분석 (원문)</h3>
+        <h3>2. HBR湲??ъ링 ?명뀛由ъ쟾??遺꾩꽍 (?먮Ц)</h3>
         <div style="padding: 18px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 20px;">
             <p style="font-size: 16px; line-height: 1.9; color: #1e293b;">
                 {cat_item.get('summary_ko', '')}
             </p>
         </div>
 
-        <h3>3. 글로벌 영문 전략 인텔리전스 (Foresight)</h3>
+        <h3>3. 湲濡쒕쾶 ?곷Ц ?꾨왂 ?명뀛由ъ쟾??(Foresight)</h3>
         <div style="padding: 16px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;">
             <p style="font-size: 14.5px; line-height: 1.75; color: #475569;">
                 {cat_item.get('summary_en', '')}
             </p>
         </div>
 
-        <h3>4. 인용 및 공식 참조</h3>
+        <h3>4. ?몄슜 諛?怨듭떇 李몄“</h3>
         <p>
-            • 공식 URL: {cat_item.get('citation', {}).get('url', '')}<br/>
-            • 인용처: {cat_item.get('citation', {}).get('source', '')}<br/>
-            • 귀속: {cat_item.get('citation', {}).get('attribution', '')}
+            ??怨듭떇 URL: {cat_item.get('citation', {}).get('url', '')}<br/>
+            ???몄슜泥? {cat_item.get('citation', {}).get('source', '')}<br/>
+            ??洹?? {cat_item.get('citation', {}).get('attribution', '')}
         </p>
 
     </div>
     <!-- /wp:group -->
     """
 
-    categories = [PARENT_CATEGORY_ID, WP_CATEGORY_MAP.get(cat_id, 27)]
+    # Private research archive uses Uncategorized (ID 1) to avoid leaking into public category feeds
+    categories = [1]
 
     featured_media_id = None
     if photo_info:
@@ -376,12 +375,12 @@ def publish_admin_private_archive(cat_item, report_id, osint_data=None, photo_in
         client = get_wp_client()
         ok, post_id, post_link = client.create_post(payload)
         if ok:
-            print(f"  ✓ [Private Research Dossier] '{cat_ko}' 비공개 보관 완료 (ID: {post_id})")
+            print(f"  ??[Private Research Dossier] '{cat_ko}' 鍮꾧났媛?蹂닿? ?꾨즺 (ID: {post_id})")
             return post_id
         else:
-            print(f"  ⚠️ [Private Research Dossier] '{cat_ko}' 실패: {post_link}")
+            print(f"  ?좑툘 [Private Research Dossier] '{cat_ko}' ?ㅽ뙣: {post_link}")
     except Exception as e:
-        print(f"  ⚠️ [Private Research Dossier] 예외: {e}")
+        print(f"  ?좑툘 [Private Research Dossier] ?덉쇅: {e}")
     return None
 
 # ---------------------------------------------------------------------------
@@ -401,11 +400,11 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
     - 80:20 Language ratio paywall card with dual CTAs
     """
     cat_id = cat_item.get("id", "politics")
-    cat_ko = cat_item.get("category_ko", "정치/외교")
-    headline = cat_item.get("headline", "AGI 거버넌스")
+    cat_ko = cat_item.get("category_ko", "?뺤튂/?멸탳")
+    headline = cat_item.get("headline", "AGI 嫄곕쾭?뚯뒪")
     vol = report_id.split("-W")[-1] if "-W" in report_id else "39"
 
-    post_title = f"[UCKLab Strategic Review] {cat_ko} — {headline} & UCKLab Executive Note™"
+    post_title = f"[UCKLab Strategic Review] {cat_ko} ??{headline} & UCKLab Executive Note??
 
     featured_media_id = None
     featured_image_url = ""
@@ -423,20 +422,20 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         <div class="ucklab-featured-banner" style="margin: 0 0 24px 0; text-align: center; overflow: hidden; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.08);">
             <img src="{featured_image_url}" alt="{headline} ({cat_ko})" style="width: 100%; max-width: 810px; height: auto; aspect-ratio: 810/480; object-fit: cover; display: block; margin: 0 auto;" />
             <div style="font-size: 11.5px; color: #64748b; margin-top: 6px; text-align: right; padding-right: 8px;">
-                📷 UCKLab Curated Editorial Intelligence Photo (810x480)
+                ?벜 UCKLab Curated Editorial Intelligence Photo (810x480)
             </div>
         </div>
         """
 
     dossier = CATEGORY_DOSSIERS.get(cat_id, {})
-    subtitle = dossier.get("subtitle", f"{cat_ko} 주간 UCKLab Executive Note™ 및 U-Radar 지수 분석")
+    subtitle = dossier.get("subtitle", f"{cat_ko} 二쇨컙 UCKLab Executive Note??諛?U-Radar 吏??遺꾩꽍")
     copywriter_hook = dossier.get("copywriter_hook", "")
     theses = dossier.get("theses", cat_item.get("three_line_summary", []))
-    p1_title = dossier.get("point1_title", "1. 거시적 시스템 진단 (Macro Diagnosis)")
+    p1_title = dossier.get("point1_title", "1. 嫄곗떆???쒖뒪??吏꾨떒 (Macro Diagnosis)")
     p1_content = dossier.get("point1_content", cat_item.get("summary_ko", ""))
-    p2_title = dossier.get("point2_title", "2. 알고리즘 주권과 소버린 아키텍처 (Sovereignty & Architecture)")
+    p2_title = dossier.get("point2_title", "2. ?뚭퀬由ъ쬁 二쇨텒怨??뚮쾭由??꾪궎?띿쿂 (Sovereignty & Architecture)")
     p2_content = dossier.get("point2_content", "")
-    p3_title = dossier.get("point3_title", "3. C-Level 실행 과제 (Actionable Execution)")
+    p3_title = dossier.get("point3_title", "3. C-Level ?ㅽ뻾 怨쇱젣 (Actionable Execution)")
     p3_content = dossier.get("point3_content", "")
     exec_synthesis = dossier.get("executive_synthesis", "")
     english_lines = dossier.get("english_briefing", [cat_item.get("summary_en", "")])
@@ -447,20 +446,19 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
     radar = cat_item.get("trend_radar", {})
     radar_stage = radar.get("stage", "Stage 2 (Community)")
     radar_velocity = radar.get("velocity", 3.2)
-    radar_desc = radar.get("transition_description", "트렌드 확산 중")
+    radar_desc = radar.get("transition_description", "?몃젋???뺤궛 以?)
 
     chart_img_html = ""
     if chart_url:
         chart_img_html = f"""
         <div class="ucklab-chart-box" style="margin: 26px 0; text-align: center;">
-            <img src="{chart_url}" alt="{cat_ko} 전략 분석 데이터 차트" style="width: 100%; max-width: 820px; height: auto; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 8px 24px rgba(0,0,0,0.08);" loading="lazy" />
+            <img src="{chart_url}" alt="{cat_ko} ?꾨왂 遺꾩꽍 ?곗씠??李⑦듃" style="width: 100%; max-width: 820px; height: auto; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 8px 24px rgba(0,0,0,0.08);" loading="lazy" />
             <div style="font-size: 12px; color: #64748b; margin-top: 8px; font-weight: 600;">
-                ▲ [UCKLab AGI Radar Index™] {cat_ko} 4대 핵심 역학 데이터 시각화 지표
-            </div>
+                ??[UCKLab AGI Radar Index?? {cat_ko} 4? ?듭떖 ??븰 ?곗씠???쒓컖??吏??            </div>
         </div>
         """
 
-    theses_html = build_three_line_summary_box(theses, title=f"{cat_ko} 주간 3대 핵심 전략 명제")
+    theses_html = build_three_line_summary_box(theses, title=f"{cat_ko} 二쇨컙 3? ?듭떖 ?꾨왂 紐낆젣")
     paywall_html = build_category_paywall_card(cat_item, main_landing_url=WP_URL)
     citation_html = build_citation_box(citation_data)
 
@@ -481,7 +479,7 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         synthesis_box_html = f"""
         <div style="margin: 24px 0; padding: 22px 24px; border-radius: 12px; background: #eff6ff; border-left: 5px solid #2563eb; border: 1px solid #bfdbfe;">
             <h4 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 800; color: #1e40af;">
-                🏛️ [UCKLab 학술적 총평 &amp; 청지기적 주권 결론]
+                ?룢截?[UCKLab ?숈닠??珥앺룊 &amp; 泥??湲곗쟻 二쇨텒 寃곕줎]
             </h4>
             <p style="margin: 0; font-size: 15px; line-height: 1.85; color: #1e3a8a; word-break: keep-all;">
                 {exec_synthesis}
@@ -502,8 +500,7 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         hook_box_html = f"""
         <div class="ucklab-copywriter-hook" style="background: #f8fafc; border-left: 5px solid #2563eb; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; margin: 24px 0; font-size: 15.5px; line-height: 1.8; color: #1e293b; font-weight: 500; word-break: keep-all; box-shadow: 0 4px 14px rgba(37,99,235,0.04);">
             <div style="font-size: 12px; font-weight: 800; color: #2563eb; margin-bottom: 6px; letter-spacing: 0.5px;">
-                ⚡ STRATEGIC COGNITIVE TRIGGER // 사전 검증 브리핑
-            </div>
+                ??STRATEGIC COGNITIVE TRIGGER // ?ъ쟾 寃利?釉뚮━??            </div>
             <p style="margin: 0; white-space: pre-line;">
                 {copywriter_hook}
             </p>
@@ -520,10 +517,10 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
 
         <div style="display: flex; gap: 8px; align-items: center; margin: 16px 0 10px 0; flex-wrap: wrap;">
             <span style="display:inline-flex; align-items:center; gap:6px; padding: 5px 14px; border-radius: 8px; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(245, 158, 11, 0.5); color: #FBBF24; font-size: 12.5px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); text-shadow: 0 1px 2px rgba(0,0,0,0.8);">
-                {radar_stage} (속도: +{radar_velocity}σ)
+                {radar_stage} (?띾룄: +{radar_velocity}?)
             </span>
             <span style="display:inline-flex; align-items:center; gap:6px; padding: 5px 14px; border-radius: 8px; background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(56, 189, 248, 0.55); color: #38BDF8; font-size: 12.5px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); text-shadow: 0 1px 2px rgba(0,0,0,0.8);">
-                🛡️ 사전 검증용 (500단어+)
+                ?썳截??ъ쟾 寃利앹슜 (500?⑥뼱+)
             </span>
             <span style="font-size: 13px; color: #CBD5E1; font-weight: 500;">
                 {radar_desc}
@@ -539,7 +536,7 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         </div>
 
         <div style="font-size: 13px; color: #64748b; margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0;">
-            <b>연구 발행:</b> UCKLab AGI Research Institute | <b>U-Radar 지수:</b> {cat_item.get('trend_score', 88)} pt | <b>분야:</b> {cat_ko} | <b>피어 리뷰 완료</b>
+            <b>?곌뎄 諛쒗뻾:</b> UCKLab AGI Research Institute | <b>U-Radar 吏??</b> {cat_item.get('trend_score', 88)} pt | <b>遺꾩빞:</b> {cat_ko} | <b>?쇱뼱 由щ럭 ?꾨즺</b>
         </div>
 
         {hook_box_html}
@@ -551,21 +548,21 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         <!-- 3-Part Academic Standalone Analysis (500-word+ Core) -->
         <div class="ucklab-point-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 26px 28px; margin: 22px 0; box-shadow: 0 4px 16px rgba(15,23,42,0.03);">
             <h3 style="margin: 0 0 14px 0; font-size: 17.5px; font-weight: 800; color: #1e40af; display: flex; align-items: center; gap: 8px;">
-                <span>🏛️</span> <b>{p1_title}</b>
+                <span>?룢截?/span> <b>{p1_title}</b>
             </h3>
             {p1_html}
         </div>
 
         <div class="ucklab-point-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 26px 28px; margin: 22px 0; box-shadow: 0 4px 16px rgba(15,23,42,0.03);">
             <h3 style="margin: 0 0 14px 0; font-size: 17.5px; font-weight: 800; color: #0d9488; display: flex; align-items: center; gap: 8px;">
-                <span>🛡️</span> <b>{p2_title}</b>
+                <span>?썳截?/span> <b>{p2_title}</b>
             </h3>
             {p2_html}
         </div>
 
         <div class="ucklab-point-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 26px 28px; margin: 22px 0; box-shadow: 0 4px 16px rgba(15,23,42,0.03);">
             <h3 style="margin: 0 0 14px 0; font-size: 17.5px; font-weight: 800; color: #b45309; display: flex; align-items: center; gap: 8px;">
-                <span>⚡</span> <b>{p3_title}</b>
+                <span>??/span> <b>{p3_title}</b>
             </h3>
             {p3_html}
         </div>
@@ -575,7 +572,7 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         <!-- 5-Line English C-Suite Briefing -->
         <div class="ucklab-english-briefing" style="background: #0f172a; border: 1px solid #334155; border-radius: 14px; padding: 24px 26px; color: #f1f5f9; margin: 26px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.18);">
             <div style="font-size: 13.5px; font-weight: 800; color: #38bdf8; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                <span>🌐</span> <b>[C-Suite Global Strategic Briefing · 5 Core Vectors]</b>
+                <span>?뙋</span> <b>[C-Suite Global Strategic Briefing 쨌 5 Core Vectors]</b>
             </div>
             <ol style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.75; color: #cbd5e1;">
                 {en_list_items}
@@ -592,10 +589,11 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
     <!-- /wp:group -->
     """
 
-    categories = [PARENT_CATEGORY_ID, WP_CATEGORY_MAP.get(cat_id, 27)]
+    # Private research archive uses Uncategorized (ID 1) to avoid leaking into public category feeds
+    categories = [1]
 
-    aioseo_title = f"[UCKLab Strategic Review Vol. {vol}] {headline} | UCKLab Monograph™"
-    aioseo_desc = f"UCKLab Strategic Review: 10대 분야 U-Radar 지수 분석, UCKLab Executive Note™, 및 UCKLab Monograph™ (2,500단어 APA 7th 저널) 수록"
+    aioseo_title = f"[UCKLab Strategic Review Vol. {vol}] {headline} | UCKLab Monograph??
+    aioseo_desc = f"UCKLab Strategic Review: 10? 遺꾩빞 U-Radar 吏??遺꾩꽍, UCKLab Executive Note?? 諛?UCKLab Monograph??(2,500?⑥뼱 APA 7th ??? ?섎줉"
 
     payload = {
         "title": post_title,
@@ -616,12 +614,12 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
         client = get_wp_client()
         ok, post_id, post_link = client.create_post(payload)
         if ok:
-            print(f"  ✓ [Public Executive Dossier] '{cat_ko}' 공개 포스팅 완료 (ID: {post_id}) -> {post_link}")
+            print(f"  ??[Public Executive Dossier] '{cat_ko}' 怨듦컻 ?ъ뒪???꾨즺 (ID: {post_id}) -> {post_link}")
             return post_link
         else:
-            print(f"  ⚠️ [Public Executive Dossier] '{cat_ko}' 실패: {post_link}")
+            print(f"  ?좑툘 [Public Executive Dossier] '{cat_ko}' ?ㅽ뙣: {post_link}")
     except Exception as e:
-        print(f"  ⚠️ [Public Executive Dossier] 예외: {e}")
+        print(f"  ?좑툘 [Public Executive Dossier] ?덉쇅: {e}")
     return None
 
 # ---------------------------------------------------------------------------
@@ -629,13 +627,40 @@ def publish_public_executive_dossier(cat_item, report_id, chart_url="", photo_in
 # ---------------------------------------------------------------------------
 def publish_all_category_dual_posts(report_id, news_items, category_charts=None, osint_data=None, category_photos=None):
     """
+    Executes the clean Publishing process for all 10 categories:
+    Only publishes 10 Public Executive Dossier Posts (status: 'publish') to prevent duplication.
+    """
+    category_urls = {}
+    print(f"\n=======================================================")
+    print(f"🏛️ [Category Publisher] 10대 분야 맞춤형 공개 브리핑 발행")
+    print(f"=======================================================")
+
+    for item in news_items:
+        cat_id = item.get("id")
+        chart_info = (category_charts or {}).get(cat_id)
+        photo_info = (category_photos or {}).get(cat_id)
+
+        pub_url = publish_single_category_public_post(
+            report_id=report_id,
+            cat_item=item,
+            chart_info=chart_info,
+            osint_data=osint_data,
+            photo_info=photo_info
+        )
+        if pub_url:
+            category_urls[cat_id] = pub_url
+
+    return category_urls
+
+def _legacy_publish_all_category_dual_posts_unused(report_id, news_items, category_charts=None, osint_data=None, category_photos=None):
+    """
     Executes the complete Dual-Architecture publishing process for all 10 categories:
     1. Option 1: Publishes 10 Private Admin Posts (status: 'private').
     2. Option 2: Publishes 10 Public Executive Dossier Posts (status: 'publish') with W810 x H480 Stock Photos, 16:9 charts & Paywall.
     3. Returns category_urls mapping: {cat_id: public_url} for front page linking!
     """
     print(f"\n=======================================================")
-    print(f"🏛️ [Category Dual Publisher] 10대 분야 비공개 보관 & 공개 요약 발행")
+    print(f"?룢截?[Category Dual Publisher] 10? 遺꾩빞 鍮꾧났媛?蹂닿? & 怨듦컻 ?붿빟 諛쒗뻾")
     print(f"=======================================================")
 
     category_public_urls = {}
@@ -653,5 +678,6 @@ def publish_all_category_dual_posts(report_id, news_items, category_charts=None,
         if pub_url:
             category_public_urls[cat_id] = pub_url
 
-    print(f"✓ 10대 카테고리 이원화 발행 완료 (총 {len(category_public_urls)}개 공개 링크 확보)")
+    print(f"??10? 移댄뀒怨좊━ ?댁썝??諛쒗뻾 ?꾨즺 (珥?{len(category_public_urls)}媛?怨듦컻 留곹겕 ?뺣낫)")
     return category_public_urls
+
