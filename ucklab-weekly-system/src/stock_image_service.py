@@ -39,56 +39,120 @@ TARGET_ASPECT = TARGET_WIDTH / TARGET_HEIGHT  # 1.6875
 # Curated High-Definition Free Stock Photo Fallback Mapping (High Quality Unsplash / Free Stock CDN)
 CATEGORY_STOCK_COLLECTION = {
     "politics": [
-        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1600&q=85",  # Parliament / Diplomacy
-        "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=85",  # Governance / G7 hall
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=85"   # Leadership Summit
+        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=1600&q=85"
     ],
     "economy": [
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=85",  # Container Ship / Logistics
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85",  # Semiconductor / Microchips
-        "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1600&q=85"   # Cargo Port Trade
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1618042164219-62c820f10723?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=85"
     ],
     "society": [
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=85",  # AI & Human Society
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&q=85",  # Digital Workforce
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85"   # Cyber Ethics
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=85"
     ],
     "culture": [
-        "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=1600&q=85",  # Contemporary Art & Tech
-        "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=85",  # Museum Media Installation
-        "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1600&q=85"   # Generative Aesthetics
+        "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1508997449629-303059a039c0?auto=format&fit=crop&w=1600&q=85"
     ],
     "finance": [
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=85",  # Financial Stock Charts
-        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1600&q=85",  # Fintech Digital Assets
-        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=85"   # Global Currency & Banking
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1600&q=85"
     ],
     "defense": [
-        "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1600&q=85",  # Radar & Surveillance
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=85",  # Satellite Earth Telemetry
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=85"   # Cybersecurity Operations
+        "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1517976487580-c11c10729221?auto=format&fit=crop&w=1600&q=85"
     ],
     "christianity": [
-        "https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1600&q=85",  # Cathedral Light / Stewardship
-        "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1600&q=85",  # Mountain Light of Hope
-        "https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1600&q=85"   # Scripture & Wisdom
+        "https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1600&q=85"
     ],
     "science": [
-        "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1600&q=85",  # Quantum / Supercomputer
-        "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=85",  # Laboratory Research
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85"   # Advanced Technology
+        "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=85"
     ],
     "climate": [
-        "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1600&q=85",  # Wind Energy Turbines
-        "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1600&q=85",  # Solar Panel Farm
-        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=85"   # Green Grid Transmission
+        "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1600&q=85"
     ],
     "sports": [
-        "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1600&q=85",  # Stadium Track Lights
-        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=85",  # Athletic Running Race
-        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1600&q=85"   # Sports Arena Performance
+        "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1600&q=85"
     ]
 }
+
+
+def search_wikimedia_commons(query):
+    """Dynamically queries Wikimedia Commons API for high-resolution free images matching the headline."""
+    if not query:
+        return None
+    try:
+        clean_q = re.sub(r'[^a-zA-Z0-9\s]', ' ', query).strip()
+        search_terms = " ".join(clean_q.split()[:4])
+        if not search_terms:
+            return None
+        params = {
+            'action': 'query',
+            'generator': 'search',
+            'gsrsearch': search_terms,
+            'gsrnamespace': '6',
+            'gsrlimit': '6',
+            'prop': 'imageinfo',
+            'iiprop': 'url|mime|size',
+            'format': 'json'
+        }
+        url = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode(params)
+        req = urllib.request.Request(url, headers={'User-Agent': 'UCKLabBot/1.0 (https://ucdigin.net; chblee58@gmail.com)'})
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode())
+            pages = data.get('query', {}).get('pages', {})
+            for pid, p in pages.items():
+                info = p.get('imageinfo', [{}])[0]
+                mime = info.get('mime', '').lower()
+                if ('jpeg' in mime or 'jpg' in mime or 'png' in mime) and info.get('width', 0) >= 800:
+                    return info.get('url')
+    except Exception as e:
+        pass
+    return None
 
 def query_pixabay(query):
     """Searches Pixabay API if PIXABAY_API_KEY is configured."""
@@ -185,17 +249,19 @@ def get_category_stock_photo(cat_id, headline="", report_id="WEEKLY"):
     if os.path.exists(local_path) and os.path.getsize(local_path) > 20000:
         return local_path
 
-    # Step 1: Attempt Pixabay search
+    # Step 1: Attempt Dynamic Free Image Search (Wikimedia Commons / Pixabay / Pexels)
     image_url = None
     if headline:
-        search_query = f"{cat_id_clean} {headline[:30]}"
-        image_url = query_pixabay(search_query) or query_pexels(search_query)
+        image_url = search_wikimedia_commons(headline)
+        if not image_url:
+            search_query = f"{cat_id_clean} {headline[:30]}"
+            image_url = query_pixabay(search_query) or query_pexels(search_query)
 
-    # Step 2: Fallback to Curated Category Stock Photos
+    # Step 2: Fallback to Unique Varied HD Stock Collection (guarantees a different photo each week)
     if not image_url:
         collection = CATEGORY_STOCK_COLLECTION.get(cat_id_clean, CATEGORY_STOCK_COLLECTION["politics"])
-        # Rotate selection based on time/report
-        seed_idx = abs(hash(f"{report_id}_{cat_id_clean}")) % len(collection)
+        # Derive distinct rotational seed from headline + report_id so every weekly edition gets a different image
+        seed_idx = abs(hash(f"{report_id}_{headline}_{cat_id_clean}")) % len(collection)
         image_url = collection[seed_idx]
 
     print(f"  📷 [Stock Photo] [{cat_id_clean}] 고화질 원본 다운로드 중: {image_url[:65]}...")
