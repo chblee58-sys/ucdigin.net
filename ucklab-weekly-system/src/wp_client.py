@@ -17,9 +17,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 WP_URL = os.getenv("WP_URL", "https://ucdigin.net").rstrip("/")
-WP_USER = os.getenv("WP_ADMIN_USER", "CEO")
-WP_PASS = os.getenv("WP_ADMIN_PASS", "1290@UCDGN_ceo")
-WP_APP_PWD = os.getenv("WP_APP_PASSWORD", "5kOS QdBg 6Prd qR4F qixR lg43")
+WP_USER = os.getenv("WP_USER", os.getenv("WP_ADMIN_USER", "AutoBot_Editor"))
+WP_PASS = os.getenv("WP_APP_PASSWORD", os.getenv("WP_ADMIN_PASS", "1y1X o32Y FSRb RaJ9 bGTj bPyL"))
+WP_APP_PWD = os.getenv("WP_APP_PASSWORD", WP_PASS)
 
 class WordPressClient:
     def __init__(self, wp_url=None, user=None, password=None):
@@ -30,9 +30,12 @@ class WordPressClient:
         self.session.headers.update({
             "User-Agent": "UCKLab-Executive-AutoBot/2026.1 (Windows NT 10.0; Win64; x64)"
         })
+        self.basic_auth_header = "Basic " + base64.b64encode(f"{self.user}:{self.password}".encode()).decode()
         self.rest_nonce = None
         self.logged_in = False
-        self._authenticate()
+        # Do not use cookie login when using WordPress Application Passwords
+        if " " not in self.password:
+            self._authenticate()
 
     def _authenticate(self):
         """Authenticates via wp-login.php and extracts REST nonce from wp-admin."""
@@ -67,16 +70,14 @@ class WordPressClient:
 
     def get_auth_headers(self, content_type="application/json"):
         """Returns valid headers for WordPress REST API requests."""
-        headers = {}
+        headers = {
+            "Authorization": self.basic_auth_header
+        }
         if content_type:
             headers["Content-Type"] = content_type
 
         if self.rest_nonce:
             headers["X-WP-Nonce"] = self.rest_nonce
-        else:
-            # Fallback to basic auth header
-            b64_val = base64.b64encode(f"{self.user}:{self.password}".encode()).decode()
-            headers["Authorization"] = f"Basic {b64_val}"
 
         return headers
 
