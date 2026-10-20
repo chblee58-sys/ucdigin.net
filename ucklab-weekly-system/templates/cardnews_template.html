@@ -1,0 +1,83 @@
+<!-- UCKLab Weekly HBR 4-Grid Card News Component -->
+<div id="ucklab-cardnews-section" style="margin: 40px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="text-align: center; margin-bottom: 24px;">
+        <span class="ucklab-hbr-badge">Weekly Executive Card News</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #0F172A; margin: 8px 0;">
+            4-Card 한눈에 보는 주간 HBR 핵심 요약
+        </h3>
+        <p style="font-size: 14px; color: #64748B; margin: 0;">
+            C-Suite 리더십과 크리스천 청지기를 위한 주간 4대 아젠다 하이라이트
+        </p>
+    </div>
+
+    <div class="ucklab-cardnews-grid">
+        <!-- Card 1: Main Title & Hook -->
+        <div class="ucklab-cardnews-item" style="border-top: 4px solid #38BDF8;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 12px; font-weight: 700; color: #38BDF8; letter-spacing: 1px;">CARD 01 // OVERVIEW</span>
+                <span style="font-size: 16px;">🌐</span>
+            </div>
+            <h4 style="font-size: 17px; font-weight: 800; color: #FFFFFF; margin: 0 0 10px 0; line-height: 1.4;">
+                {card1_title}
+            </h4>
+            <p style="font-size: 13.5px; line-height: 1.65; color: #CBD5E1; margin: 0 0 14px 0;">
+                {card1_hook}
+            </p>
+            <div style="padding: 8px 12px; border-radius: 6px; background: rgba(56, 189, 248, 0.1); font-size: 12px; color: #7DD3FC;">
+                ⚡ 핵심: {card1_highlight}
+            </div>
+        </div>
+
+        <!-- Card 2: Python Data Chart & Trend Radar -->
+        <div class="ucklab-cardnews-item" style="border-top: 4px solid #10B981;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 12px; font-weight: 700; color: #10B981; letter-spacing: 1px;">CARD 02 // RADAR &amp; CHART</span>
+                <span style="font-size: 16px;">📊</span>
+            </div>
+            <h4 style="font-size: 17px; font-weight: 800; color: #FFFFFF; margin: 0 0 10px 0; line-height: 1.4;">
+                10대 아젠다 트렌드 레이더
+            </h4>
+            <div style="margin-bottom: 12px; border-radius: 8px; overflow: hidden; border: 1px solid #334155; background: #0f172a; min-height: 140px; display: flex; align-items: center; justify-content: center;">
+                <img src="{chart_url}" alt="10대 아젠다 주간 데이터 차트" style="width: 100%; height: auto; display: block; object-fit: contain;" loading="lazy" />
+            </div>
+            <p style="font-size: 12.5px; line-height: 1.55; color: #CBD5E1; margin: 0;">
+                • CII 국가불안정 지수: <b>{cii_score}/10.0</b><br/>
+                • 컴퓨팅 그리드 부하율: <b>{grid_stress}%</b>
+            </p>
+        </div>
+
+        <!-- Card 3: '이창배 Note' Column Quote -->
+        <div class="ucklab-cardnews-item" style="border-top: 4px solid #F59E0B;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 12px; font-weight: 700; color: #F59E0B; letter-spacing: 1px;">CARD 03 // 이창배 NOTE</span>
+                <span style="font-size: 16px;">✍️</span>
+            </div>
+            <h4 style="font-size: 17px; font-weight: 800; color: #FFFFFF; margin: 0 0 10px 0; line-height: 1.4;">
+                AI 융합 청지기 정론
+            </h4>
+            <blockquote style="margin: 0 0 14px 0; padding-left: 12px; border-left: 3px solid #F59E0B; font-style: italic; font-size: 13.5px; line-height: 1.65; color: #FDE68A;">
+                "{column_quote}"
+            </blockquote>
+            <div style="font-size: 12px; color: #94A3B8;">
+                — Dr. Chang-bae Lee (UCKLab 소장)
+            </div>
+        </div>
+
+        <!-- Card 4: CTA 9,900 KRW Paywall & 3-Revision PPT Offer -->
+        <div class="ucklab-cardnews-item" style="border-top: 4px solid #D97706; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 12px; font-weight: 700; color: #FBBF24; letter-spacing: 1px;">CARD 04 // EXECUTIVE REPORT</span>
+                <span style="font-size: 16px;">📑</span>
+            </div>
+            <h4 style="font-size: 17px; font-weight: 800; color: #FFFFFF; margin: 0 0 8px 0; line-height: 1.4;">
+                5,000단어 PDF &amp; 발표용 PPT
+            </h4>
+            <p style="font-size: 13px; line-height: 1.55; color: #CBD5E1; margin: 0 0 14px 0;">
+                커피 한 잔 값(<b>9,900원</b>)으로 주간 10대 분야 심층 보고서와 3회 수정 거버넌스가 보장된 C-Level 발표용 PPT 덱을 받아보세요.
+            </p>
+            <a href="javascript:void(0)" onclick="window.openUcklabWeeklyModal ? window.openUcklabWeeklyModal() : (function(){var o=document.getElementById('ucklab-weekly-modal-overlay');if(o){o.style.display='flex';document.body.style.overflow='hidden';}})()" class="ucklab-cta-btn" style="padding: 12px; font-size: 14px;">
+                📄 리포트 &amp; PPT 신청하기 (9,900원) ➔
+            </a>
+        </div>
+    </div>
+</div>

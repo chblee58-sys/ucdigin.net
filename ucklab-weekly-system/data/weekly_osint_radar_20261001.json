@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-01T12:44:40.558069",
+  "country_instability_index": {
+    "G7_Overall": 3.1,
+    "East_Asia_KR_TW": 4.65,
+    "Middle_East": 7.2,
+    "Eastern_Europe": 6.85
+  },
+  "geopolitical_signals": {
+    "alert_level": "ELEVATED_WATCH",
+    "tech_sanction_intensity": 8.1,
+    "alliance_cohesion_index": 7.9,
+    "escalation_vectors": [
+      "글로벌 첨단 반도체 공급망 및 AGI 파운드리 전략적 블록화",
+      "동아시아 및 동유럽 전선 사이버 전자전 및 핵심 인프라 안보",
+      "G7 및 다자간 기구의 AGI 자율 규제 거버넌스 조약 수립"
+    ]
+  },
+  "infrastructure_finance_radar": {
+    "compute_grid_stress_pct": 76.8,
+    "sovereign_debt_pressure": "MODERATE_HIGH",
+    "swift_to_cbdc_velocity_ratio": 1.55,
+    "critical_undersea_cable_status": "NORMAL_MONITORED",
+    "cross_border_liquidity_signal": "QUALITY_PRESERVATION"
+  }
+}

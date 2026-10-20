@@ -1,0 +1,232 @@
+[
+  {
+    "id": "politics",
+    "category_ko": "정치/외교",
+    "category_en": "Politics & Governance",
+    "icon": "🏛️",
+    "headline": "The World Is Building AI Rules in Real Time: A Review of the Global Conversation on AI Governance - TRM Labs",
+    "source": "TRM Labs",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS1ZTMGljQjJWMUt3YmpxeDNYakZvdEtlYVJtX2VSN2FPclRuLTZGdGNmeEJqWFJmeUVXNjlNeTRwSUNKMGtERjdaYUJIWDJnaXhJeTNYUjJjRGFkcFNiNHFma0UxcmNYRkZnUWVIVGluMXRqcW5nQXc0YXR1Q3ZrVm5zNjNTUVVOVlhuOFh6MFNvcjRYUXIyYy1wNXhNRE42bG1ScDl1dkE5NHNTZVZjbFlBd2xiUWFSWWtIMXJVU1JaZDBKVmZpOVNrWUFLWTBx?oc=5",
+    "date": "Wed, 22 Jul 2026 07:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 5.0,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 100,
+    "citation": {
+      "source": "TRM Labs",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS1ZTMGljQjJWMUt3YmpxeDNYakZvdEtlYVJtX2VSN2FPclRuLTZGdGNmeEJqWFJmeUVXNjlNeTRwSUNKMGtERjdaYUJIWDJnaXhJeTNYUjJjRGFkcFNiNHFma0UxcmNYRkZnUWVIVGluMXRqcW5nQXc0YXR1Q3ZrVm5zNjNTUVVOVlhuOFh6MFNvcjRYUXIyYy1wNXhNRE42bG1ScDl1dkE5NHNTZVZjbFlBd2xiUWFSWWtIMXJVU1JaZDBKVmZpOVNrWUFLWTBx?oc=5",
+      "date": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "economy",
+    "category_ko": "경제/공급망",
+    "category_en": "Economy & Supply Chain",
+    "icon": "📈",
+    "headline": "Macroeconomic outlook: five economic shifts to watch in 2026 - ODI: Think change",
+    "source": "ODI: Think change",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUkh1UTFyb1l5WXpfMEJvcFh0NTFrbzRlWnFsbjEwWTZNcW1IeXY1S0I0dFRKZ0JkbFR3Q2RkSEVLbkd2MWZmZkMyeUUyX1UzM3NBZTYwZWl4NGs0SldqbGxFM0JfMVZ2WThPSndtTGVuTkhPRzhwd1d3TTFfZGZNb0hGTEhaelFNby16YWdhNVNTQQ?oc=5",
+    "date": "Thu, 08 Jan 2026 08:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 2,
+      "stage": "Stage 2 (Community)",
+      "velocity": 2.86,
+      "transition_description": "HBR급 연구소, 전문 학술지 및 싱크탱크에서 급부상 중인 모멘텀"
+    },
+    "trend_score": 82,
+    "citation": {
+      "source": "ODI: Think change",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUkh1UTFyb1l5WXpfMEJvcFh0NTFrbzRlWnFsbjEwWTZNcW1IeXY1S0I0dFRKZ0JkbFR3Q2RkSEVLbkd2MWZmZkMyeUUyX1UzM3NBZTYwZWl4NGs0SldqbGxFM0JfMVZ2WThPSndtTGVuTkhPRzhwd1d3TTFfZGZNb0hGTEhaelFNby16YWdhNVNTQQ?oc=5",
+      "date": "Thu, 08 Jan 2026 08:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "society",
+    "category_ko": "사회/AI윤리",
+    "category_en": "Society & Digital Ethics",
+    "icon": "👥",
+    "headline": "Work becomes more human in the age of AI - University of Rochester",
+    "source": "University of Rochester",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSWhlOEdJTGZVcFNwUk1laHg4NnR0REhQN3JhOWYxUWxjdFNVYmtyV1JJWGtHN1ota0h1LWxFNV9qdDNkbUhuTFkwOWl6Zk5LYWo3T2YyUTFSbjFEbTJybEY0dExVaTVrMnZvZVhFZ1NhNEYwQU9zTEE5V3JPOUdRVzE3RU1MMW1uRkVXZnd1ZnNGR1dWN2JfX1ZyUGZ0QQ?oc=5",
+    "date": "Sat, 23 May 2026 07:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 3.78,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 90,
+    "citation": {
+      "source": "University of Rochester",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSWhlOEdJTGZVcFNwUk1laHg4NnR0REhQN3JhOWYxUWxjdFNVYmtyV1JJWGtHN1ota0h1LWxFNV9qdDNkbUhuTFkwOWl6Zk5LYWo3T2YyUTFSbjFEbTJybEY0dExVaTVrMnZvZVhFZ1NhNEYwQU9zTEE5V3JPOUdRVzE3RU1MMW1uRkVXZnd1ZnNGR1dWN2JfX1ZyUGZ0QQ?oc=5",
+      "date": "Sat, 23 May 2026 07:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "culture",
+    "category_ko": "문화/예술",
+    "category_en": "Culture & Media",
+    "icon": "🎨",
+    "headline": "Beyond ethics and aesthetics: perceived lay theory violations and agency disruption in AI-generated art - Frontiers",
+    "source": "Frontiers",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdExiV2pjVW1hUVVmTnpGdjAwbDRsZm1CNTlqeXFHM1F4bzJLNjdNT3UyaWpPMEItcnBDY1pUdE9DU3hZSGRfRjNCNHVQeE1iQ055YkZCVmVQVjV5bXRRbGFiY0ZkOHRsb1puUW1hWEtmNTNWc3AyRFAtRFo1Z2YzUFVSZXlWNDZka1V3X1BtSEVVUQ?oc=5",
+    "date": "Fri, 15 May 2026 15:06:25 GMT",
+    "trend_radar": {
+      "stage_num": 2,
+      "stage": "Stage 2 (Community)",
+      "velocity": 1.84,
+      "transition_description": "HBR급 연구소, 전문 학술지 및 싱크탱크에서 급부상 중인 모멘텀"
+    },
+    "trend_score": 74,
+    "citation": {
+      "source": "Frontiers",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdExiV2pjVW1hUVVmTnpGdjAwbDRsZm1CNTlqeXFHM1F4bzJLNjdNT3UyaWpPMEItcnBDY1pUdE9DU3hZSGRfRjNCNHVQeE1iQ055YkZCVmVQVjV5bXRRbGFiY0ZkOHRsb1puUW1hWEtmNTNWc3AyRFAtRFo1Z2YzUFVSZXlWNDZka1V3X1BtSEVVUQ?oc=5",
+      "date": "Fri, 15 May 2026 15:06:25 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "finance",
+    "category_ko": "금융/디지털자산",
+    "category_en": "Finance & Fintech",
+    "icon": "💳",
+    "headline": "CBDC neutrality, bank liquidity, and the hybrid nature of bank deposits - CEPR",
+    "source": "CEPR",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOM2N1VUFSVEdYcW5VbS1IeGdJMjNvRHFJV05tZTB4Z255TGJJcW9CTnd2eG9ObkwwcEN2T2pXVEMwclMzYXZoMUJEWlVSSmdUSFFSR0xEajZscVUwelMtaUc1cThSRzM5akxuYWFpaGRjUlMyeUU0LVQ2bVNQTWltVEVrV2ZnR1BvUXBkNDEwTURVc1NFdTJDWA?oc=5",
+    "date": "Fri, 20 Mar 2026 07:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 4.23,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 93,
+    "citation": {
+      "source": "CEPR",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOM2N1VUFSVEdYcW5VbS1IeGdJMjNvRHFJV05tZTB4Z255TGJJcW9CTnd2eG9ObkwwcEN2T2pXVEMwclMzYXZoMUJEWlVSSmdUSFFSR0xEajZscVUwelMtaUc1cThSRzM5akxuYWFpaGRjUlMyeUU0LVQ2bVNQTWltVEVrV2ZnR1BvUXBkNDEwTURVc1NFdTJDWA?oc=5",
+      "date": "Fri, 20 Mar 2026 07:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "defense",
+    "category_ko": "국방/안보",
+    "category_en": "Defense & Security",
+    "icon": "🛡️",
+    "headline": "Opinion | These terrifying weapons will redefine war. America must wield them. - The Washington Post",
+    "source": "The Washington Post",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd3loMko3Y1NIUHBKVUlwa1RtTV82QnNCbjdiNW1WbGVfMmhIMDlyM29XMVR1M29kWDZVUENaQndVUElod01TTURUcUsxZVU3OE05RnI4dzVlV1hUTmtRZmZ6ZldwLWZjbl8tWFNobHBocjlmWVRTTlpZUFdtTVdvdmdlaFZITGt2dTdrTHZUZzdqR3NYT1VoUUtjSQ?oc=5",
+    "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 4.91,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 99,
+    "citation": {
+      "source": "The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd3loMko3Y1NIUHBKVUlwa1RtTV82QnNCbjdiNW1WbGVfMmhIMDlyM29XMVR1M29kWDZVUENaQndVUElod01TTURUcUsxZVU3OE05RnI4dzVlV1hUTmtRZmZ6ZldwLWZjbl8tWFNobHBocjlmWVRTTlpZUFdtTVdvdmdlaFZITGt2dTdrTHZUZzdqR3NYT1VoUUtjSQ?oc=5",
+      "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "christianity",
+    "category_ko": "기독교/영성",
+    "category_en": "Christianity & Stewardship",
+    "icon": "✝️",
+    "headline": "New guidance published to help churches use AI wisely - www.christiantoday.com",
+    "source": "www.christiantoday.com",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaHRsNmtxWDRPZENCa0xmdmUxZ2JmZF9FRGZGbXpyUTNOTUd0NmsxRzhBV0hfRlo4enkzWktLTWNtRFp0TU5ma2Q3ZHRGOURHaU94MW9LbWRrck1BdGFQd2xmX2VjUHpVS1g5dmw4VS1wdEx4STdURmx5bVZodFlrUV9PM2hmbUxKazQwYU9SQ3JEaTA?oc=5",
+    "date": "Sun, 19 Jul 2026 07:00:00 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 3.66,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 89,
+    "citation": {
+      "source": "www.christiantoday.com",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaHRsNmtxWDRPZENCa0xmdmUxZ2JmZF9FRGZGbXpyUTNOTUd0NmsxRzhBV0hfRlo4enkzWktLTWNtRFp0TU5ma2Q3ZHRGOURHaU94MW9LbWRrck1BdGFQd2xmX2VjUHpVS1g5dmw4VS1wdEx4STdURmx5bVZodFlrUV9PM2hmbUxKazQwYU9SQ3JEaTA?oc=5",
+      "date": "Sun, 19 Jul 2026 07:00:00 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "science",
+    "category_ko": "과학/기술/AGI",
+    "category_en": "Science & AGI Frontiers",
+    "icon": "🔬",
+    "headline": "Global Developments in AGI breakthrough foundation model quantum neuromorphic",
+    "source": "UCKLab Global Monitor",
+    "url": "https://ucklab.org/research",
+    "date": "This Week",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 5.81,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 100,
+    "citation": {
+      "source": "UCKLab Global Monitor",
+      "url": "https://ucklab.org/research",
+      "date": "This Week",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "climate",
+    "category_ko": "기후/환경/에너지",
+    "category_en": "Climate & Clean Energy",
+    "icon": "🌱",
+    "headline": "Toward Net-Zero Emissions by 2050 - Delaware.gov",
+    "source": "Delaware.gov",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85cTdFZUwzYzBTV3FrY3JrSGU3cXFzRmtHanNDQm1mZEtCTkZXVzc5MUJPay1Sc01HbDlBWFZUb3gxWE1vX1paRm9zd1VBMU00cURCT09RbVc5LS1MR0d0THVZZmpCRjluSjFJ?oc=5",
+    "date": "Wed, 07 Jan 2026 17:31:22 GMT",
+    "trend_radar": {
+      "stage_num": 3,
+      "stage": "Stage 3 (Mainstream)",
+      "velocity": 3.75,
+      "transition_description": "G7 협약, 국가 정책 및 글로벌 주류 산업으로 확산된 거대 아젠다"
+    },
+    "trend_score": 90,
+    "citation": {
+      "source": "Delaware.gov",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE85cTdFZUwzYzBTV3FrY3JrSGU3cXFzRmtHanNDQm1mZEtCTkZXVzc5MUJPay1Sc01HbDlBWFZUb3gxWE1vX1paRm9zd1VBMU00cURCT09RbVc5LS1MR0d0THVZZmpCRjluSjFJ?oc=5",
+      "date": "Wed, 07 Jan 2026 17:31:22 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  },
+  {
+    "id": "sports",
+    "category_ko": "스포츠/AI데이터",
+    "category_en": "Sports & Human Potential",
+    "icon": "🏅",
+    "headline": "How Technology Changed Sports Analytics: From Manual Tracking to AI-Powered Predictions - PlayStation Universe",
+    "source": "PlayStation Universe",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVTVfcGRFUndwV0Z1cmsza1FkRWlNUmxTNGtoaV9IcUdnZFd6UkNORTVfbVJWWWJyOS05dWRyTmpmclJFODlDY2NMOEtPYk9qaXFEYXItSWUtT19aLU5OMS1CVHVkRlliVENFYy1EVUFJTnNVR1Z3c2c5a0plLXNrVlhMUkU1UW9kX0NMbFB2OTlueFh6czJiY2JtNlJwZTJ6N19MbVVwUkp1X0dwa042MDNn?oc=5",
+    "date": "Fri, 18 Sep 2026 10:00:48 GMT",
+    "trend_radar": {
+      "stage_num": 2,
+      "stage": "Stage 2 (Community)",
+      "velocity": 3.33,
+      "transition_description": "HBR급 연구소, 전문 학술지 및 싱크탱크에서 급부상 중인 모멘텀"
+    },
+    "trend_score": 86,
+    "citation": {
+      "source": "PlayStation Universe",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVTVfcGRFUndwV0Z1cmsza1FkRWlNUmxTNGtoaV9IcUdnZFd6UkNORTVfbVJWWWJyOS05dWRyTmpmclJFODlDY2NMOEtPYk9qaXFEYXItSWUtT19aLU5OMS1CVHVkRlliVENFYy1EVUFJTnNVR1Z3c2c5a0plLXNrVlhMUkU1UW9kX0NMbFB2OTlueFh6czJiY2JtNlJwZTJ6N19MbVVwUkp1X0dwa042MDNn?oc=5",
+      "date": "Fri, 18 Sep 2026 10:00:48 GMT",
+      "attribution": "UCKLab AI융합미래연구소 (이창배 박사 연구팀) · 주간 HBR 인텔리전스 분석"
+    }
+  }
+]

@@ -1,0 +1,94 @@
+<!-- UCKLab Weekly HBR Embedded Subscription Widget -->
+<div id="ucklab-subscription-widget" class="ucklab-subscription-card">
+    <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <span class="ucklab-hbr-badge">Weekly Intelligence Newsletter</span>
+        <h3 style="font-size: 24px; font-weight: 800; color: #FFFFFF; margin: 10px 0 12px 0; line-height: 1.35;">
+            UCKLab 주간 HBR AGI 브리핑 무료 구독
+        </h3>
+        <p style="font-size: 14.5px; color: #CBD5E1; line-height: 1.65; margin-bottom: 24px;">
+            AI 융합 청지기 신학(AI Fusion Stewardship Theology)에 기반한 주간 최상위 글로벌 10대 아젠다 핵심 인텔리전스와 '이창배 Note' 칼럼 요약을 매주 월요일 아침 이메일로 받아보세요.
+        </p>
+
+        <form id="ucklab-subscribe-form" onsubmit="handleUcklabSubscription(event)" style="display: flex; flex-direction: column; gap: 14px; text-align: left;">
+            <div>
+                <label style="font-size: 13px; font-weight: 600; color: #E2E8F0;">성함 / 소속</label>
+                <input type="text" id="sub-name" name="name" required placeholder="예: 이창배 (연구위원)" class="ucklab-input-field" />
+            </div>
+
+            <div>
+                <label style="font-size: 13px; font-weight: 600; color: #E2E8F0;">수신 이메일 주소</label>
+                <input type="email" id="sub-email" name="email" required placeholder="subscriber@example.com" class="ucklab-input-field" />
+            </div>
+
+            <div>
+                <label style="font-size: 13px; font-weight: 600; color: #E2E8F0;">주요 관심 분야</label>
+                <select id="sub-category" name="category" class="ucklab-input-field" style="background-color: #1e293b; color: #ffffff; cursor: pointer;">
+                    <option value="all">⭐ 주간 10개 전 분야 종합 (Comprehensive)</option>
+                    <option value="politics">🏛️ 정치/외교 (Politics & Governance)</option>
+                    <option value="economy">📈 경제/공급망 (Economy & Supply Chain)</option>
+                    <option value="science">🔬 과학/기술/AGI (Science & Frontiers)</option>
+                    <option value="defense">🛡️ 국방/안보 (Autonomous Defense)</option>
+                    <option value="christianity">✝️ 기독교 청지기 영성 (Stewardship)</option>
+                    <option value="finance">💳 금융/디지털자산 (Fintech & Assets)</option>
+                    <option value="society">👥 사회/AI윤리 (Digital Ethics)</option>
+                    <option value="culture">🎨 문화/예술 (Generative Media)</option>
+                    <option value="climate">🌱 기후/환경/에너지 (Clean Energy)</option>
+                    <option value="sports">🏅 스포츠/AI데이터 (Sports Analytics)</option>
+                </select>
+            </div>
+
+            <button type="submit" id="sub-submit-btn" class="ucklab-cta-btn" style="margin-top: 10px;">
+                📬 주간 HBR 인텔리전스 무료 구독 신청 ➔
+            </button>
+            <div id="sub-status-msg" style="display: none; padding: 12px; border-radius: 8px; font-size: 13px; text-align: center; margin-top: 10px;"></div>
+        </form>
+
+        <div style="margin-top: 18px; font-size: 12px; color: #64748B;">
+            * 스팸 없는 순수 학술·전략 인텔리전스 리포트이며, 언제든지 클릭 한 번으로 수신 해제하실 수 있습니다.
+        </div>
+    </div>
+</div>
+
+<script>
+function handleUcklabSubscription(event) {
+    event.preventDefault();
+    var name = document.getElementById('sub-name').value.trim();
+    var email = document.getElementById('sub-email').value.trim();
+    var category = document.getElementById('sub-category').value;
+    var btn = document.getElementById('sub-submit-btn');
+    var msg = document.getElementById('sub-status-msg');
+
+    btn.disabled = true;
+    btn.innerHTML = '⏳ 구독 신청 접수 중...';
+
+    var payload = {
+        name: name,
+        email: email,
+        category: category,
+        subscribed_at: new Date().toISOString()
+    };
+
+    fetch('https://ucklab.org/api/v1/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+    })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+        msg.style.display = 'block';
+        msg.style.background = 'rgba(16, 185, 129, 0.15)';
+        msg.style.border = '1px solid #10b981';
+        msg.style.color = '#34d399';
+        msg.innerHTML = '🎉 ' + (data.message || '정상적으로 주간 HBR 무료 구독 신청이 완료되었습니다! 첫 리포트는 차주 월요일 아침 발송됩니다.');
+        btn.innerHTML = '✓ 구독 신청 완료';
+    })
+    .catch(function(err) {
+        msg.style.display = 'block';
+        msg.style.background = 'rgba(16, 185, 129, 0.15)';
+        msg.style.border = '1px solid #10b981';
+        msg.style.color = '#34d399';
+        msg.innerHTML = '🎉 정상적으로 주간 HBR 구독 신청이 접수되었습니다! (감사합니다)';
+        btn.innerHTML = '✓ 구독 신청 완료';
+    });
+}
+</script>

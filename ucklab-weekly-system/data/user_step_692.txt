@@ -1,0 +1,11 @@
+<USER_REQUEST>
+@[code_block]  
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-01T15:06:58+09:00.
+
+The user has mentioned some items in the form @[ITEM]. Here is extra information about the items that were mentioned by the user, in the order that they appear:
+
+@[code_block] is a [Text Block]:
+python src/import_google_contacts.py "다운로드받은_다른_주소록.csv"
+</ADDITIONAL_METADATA>
